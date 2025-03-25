@@ -1,9 +1,4 @@
-let username=prompt("please enter your username");
-let password=prompt("please enter your password");
-
-console.log(isValidPassword(username,password));
-
-isValidPassword(username,password)
+function isValidPassword(username,password)
 {
     if(password.length<8)
     {
@@ -19,3 +14,16 @@ isValidPassword(username,password)
     }
     return true;
  }
+ 
+let username=prompt("please enter your username");
+let password=prompt("please enter your password");
+
+    if (isValidPassword(username, password))
+         {
+        alert("Your password is valid!");
+    } else {
+        alert("Your password is invalid!");
+    }
+
+
+
